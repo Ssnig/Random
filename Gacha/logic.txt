@@ -1,0 +1,85 @@
+=====================================================
+        GACHA / LOOT BOX SIMULATOR
+        STEP-BY-STEP LOGIC GUIDE
+=====================================================
+
+Objective:
+To simulate a gacha (loot box) system that gives random items
+based on predefined probability rates without using any UI.
+
+-----------------------------------------------------
+STEP 1: START THE PROGRAM
+-----------------------------------------------------
+- The program begins execution.
+- Initialize all required data structures.
+
+-----------------------------------------------------
+STEP 2: DEFINE ITEM CATEGORIES
+-----------------------------------------------------
+- Create item rarity categories such as:
+  - Common
+  - Rare
+  - Legendary
+- Each category represents a different reward level.
+
+-----------------------------------------------------
+STEP 3: ASSIGN DROP PROBABILITIES
+-----------------------------------------------------
+- Assign probability percentages to each category.
+  Example:
+  - Common: high chance
+  - Rare: medium chance
+  - Legendary: low chance
+- Ensure total probability equals 100%.
+
+-----------------------------------------------------
+STEP 4: INITIALIZE USER DATA
+-----------------------------------------------------
+- Create an inventory to store obtained items.
+- Initialize a pull counter to track number of attempts.
+- Initialize a pity counter if required.
+
+-----------------------------------------------------
+STEP 5: GENERATE RANDOM VALUE
+-----------------------------------------------------
+- Generate a random number within a fixed range
+  (for example, between 1 and 100).
+- This value will determine the reward outcome.
+
+-----------------------------------------------------
+STEP 6: DETERMINE ITEM RARITY
+-----------------------------------------------------
+- Compare the random number against probability ranges.
+- Decide whether the result is Common, Rare, or Legendary.
+- Assign the corresponding item to the user.
+
+-----------------------------------------------------
+STEP 7: APPLY PITY SYSTEM CHECK
+-----------------------------------------------------
+- Check if the user has failed to obtain a Legendary
+  within a predefined number of pulls.
+- If the pity condition is met:
+  - Override the random result.
+  - Grant a Legendary item automatically.
+
+-----------------------------------------------------
+STEP 8: UPDATE INVENTORY
+-----------------------------------------------------
+- Add the obtained item to the inventory list.
+- Update pull count and pity counter accordingly.
+
+-----------------------------------------------------
+STEP 9: DISPLAY RESULT
+-----------------------------------------------------
+- Display the obtained item rarity.
+- Display updated inventory or pull count if required.
+
+-----------------------------------------------------
+STEP 10: END THE PROGRAM
+-----------------------------------------------------
+- Program execution stops.
+- Final state of inventory is preserved.
+
+=====================================================
+END OF STEP-BY-STEP LOGIC GUIDE
+=====================================================
